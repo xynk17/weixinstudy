@@ -1,0 +1,9 @@
+@import "../../style/common.wxss";
+
+.item-out{
+  display: flex;
+  flex-direction: row;
+}
+.item-button{
+  display: flex;
+}

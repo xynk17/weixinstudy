@@ -1,0 +1,25 @@
+@import "../../style/common.wxss";
+.swiper-image {
+  width: 100%;
+  background-size: cover;
+}
+.parent {
+  width: 100%;
+  background-color: #F1F8E0;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.child {
+  box-sizing: border-box;
+  background-color: white;
+  flex: 0 0 46%;
+  height: 100px;
+  border: 1px solid silver;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}

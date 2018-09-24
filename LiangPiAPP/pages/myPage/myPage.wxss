@@ -1,0 +1,13 @@
+@import "../../style/common.wxss";
+.item-out{
+  display: flex;
+  flex-direction: row;
+}
+.item-out-column{
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  padding: 10px;
+  display: flex;
+}

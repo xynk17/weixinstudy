@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/homePage/homePage",
+    "pages/reservePage/reservePage",
+    "pages/myPage/myPage",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#CEF6F5",
+    "navigationBarTitleText": "中華料理屋",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#A9F5F2",
+    "selectedColor": "#BDBDBD",
+    "backgroundColor": "#E0F8F1",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "iconPath":"images/homepage_unselect.png",
+        "selectedIconPath": "images/homepage_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/reservePage/reservePage",
+        "iconPath": "images/reserve_unselect.png",
+        "selectedIconPath": "images/reserve_select.png",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/myPage/myPage",
+        "iconPath": "images/mypage_unselect.png",
+        "selectedIconPath": "images/mypage_select.png",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

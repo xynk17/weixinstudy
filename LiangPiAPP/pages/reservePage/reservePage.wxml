@@ -1,0 +1,23 @@
+<view class="page-background">
+
+  <picker  bindchange="bindPickerChange" value="{{index}}" range="{{objectArray}}" range-key='name'>
+    <view class="picker">
+    <text space="ensp">取货车站 ：   {{objectArray[index].name}}</text>
+    </view>
+  </picker>
+
+  <picker bindchange="bindDatePickerChange" value="{{dateArray[dataPickerIndex]}}" range="{{dateArray}}">
+    <view class="picker">
+    <text space="ensp">取货日期 ：   {{dateArray[dataPickerIndex]}}</text>
+    </view>
+  </picker>
+
+  <view wx:for="{{goodsArray}}" wx:for-index="index" wx:key="id" class="item-out">
+   <text space="ensp">{{item.name}} ： {{item.count}} 个</text>
+   <button class='item-button' bindtap='bindItemButton1Click' id = "{{index}}">+</button>
+   <button class='item-button' bindtap='bindItemButton2Click' id = "{{index}}">-</button>
+  </view>
+
+  <button bindtap='bindCommitButtonClick'>提交预约</button>
+
+</view>

@@ -1,0 +1,18 @@
+<view class="page-background">
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="">
+    <swiper-item>
+      <image class="swiper-image" src="{{item}}"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="parent">
+    <block class="parent" wx:for="{{datas}}" wx:key=""> <!--block 是循环打印image-->
+        <image class="child" src="{{item}}"></image>
+    </block>
+</view>
+
+</view>

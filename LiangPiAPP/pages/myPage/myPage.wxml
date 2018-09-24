@@ -1,0 +1,21 @@
+<view class="page-background">
+<!-- head s -->
+<view class="item-out">
+<text class='item'>只显示未完了预约</text>
+<switch class='item' checked="{{switch1Checked}}" bindchange="bindSweitch1Changed"/>
+</view>
+<!-- head e -->
+
+<!-- 预约记录 s -->
+<view wx:for="{{recordArray}}" wx:for-index="index" wx:key="id" class="item-out">
+<view class='item-out-column'>
+<text>{{item.date}} {{item.time}}</text>
+<text>{{item.eki}}</text>
+<text>{{item.goodsString}}</text>
+</view>
+<text>{{item.status}}</text>
+<button wx:if="{{item.status=='等待中'}}"id="{{index}}"bindtap='bindCancelButtonClick'>取消预约</button>
+</view>
+<!-- 预约记录 e-->
+
+</view>
