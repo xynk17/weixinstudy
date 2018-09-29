@@ -2,6 +2,8 @@
 .swiper-image {
   width: 100%;
   background-size: cover;
+  border-radius: 15px;
+  
 }
 .parent {
   width: 100%;
@@ -16,8 +18,34 @@
 .child {
   box-sizing: border-box;
   background-color: white;
+  border-radius: 15px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   flex: 0 0 46%;
   height: 100px;
+  border: 1px solid silver;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+.yilanTitle {
+padding: 5px 10px 5px 15px;
+
+}
+.orderButton{
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 15px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex: 0 0 46%;
+  height: 60px;
+  width: 46%;
   border: 1px solid silver;
   margin-top: 1%;
   margin-left: 1%;

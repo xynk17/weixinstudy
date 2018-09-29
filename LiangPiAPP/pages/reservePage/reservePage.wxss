@@ -1,9 +1,46 @@
 @import "../../style/common.wxss";
-
+.head-block{
+border-radius: 10px;
+background-color:lightblue;
+margin: 5px 10px 5px 10px;
+padding: 5px;
+width: 94%;
+}
 .item-out{
+  background-color: pink;
   display: flex;
   flex-direction: row;
+  margin: 5px 10px 5px 10px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 94%;
+}
+.item-text{
+padding-left: 10px;
+align-self: center;
+width: 33%;
+}
+.item-text1{
+padding-left: 10px;
+padding-bottom: 10px;
+padding-top: 10px;
+align-self: center;
+width: 33%;
+
+}
+.item-picker{
+padding-left: 10px;
+align-self: center;
+width: 63%;
 }
 .item-button{
+width: 10%;
+}
+.commitButton{
+  margin-top: 20px;
+  margin-bottom: 80px;
+  width: 40%;
+}
+.picker{
   display: flex;
 }

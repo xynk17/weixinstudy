@@ -1,23 +1,34 @@
 <view class="page-background">
-
+<view class="head-block">
   <picker  bindchange="bindPickerChange" value="{{index}}" range="{{objectArray}}" range-key='name'>
     <view class="picker">
-    <text space="ensp">取货车站 ：   {{objectArray[index].name}}</text>
+    <text class="item-text1"space="ensp">取货车站 </text>
+    <text class="item-picker"space="ensp"> ：   {{objectArray[index].name}}</text>
     </view>
   </picker>
 
   <picker bindchange="bindDatePickerChange" value="{{dateArray[dataPickerIndex]}}" range="{{dateArray}}">
     <view class="picker">
-    <text space="ensp">取货日期 ：   {{dateArray[dataPickerIndex]}}</text>
+    <text class="item-text1" space="ensp">取货日期 </text>
+    <text class="item-picker"space="ensp"> ：   {{dateArray[dataPickerIndex]}}</text>
     </view>
   </picker>
 
+  <picker bindchange="bindTimePickerChange" value="{{timeArray[timePickerIndex]}}" range="{{timeArray}}">
+    <view class="picker">
+    <text class="item-text1" space="ensp">取货时间带 </text>
+    <text class="item-picker"space="ensp"> ：   {{timeArray[dataPickerIndex]}}</text>
+    </view>
+  </picker>
+</view>
+
   <view wx:for="{{goodsArray}}" wx:for-index="index" wx:key="id" class="item-out">
-   <text space="ensp">{{item.name}} ： {{item.count}} 个</text>
+   <text class="item-text"space="ensp">{{item.name}} </text>
+   <text class="item-text"space="ensp">： {{item.count}} 个</text>
    <button class='item-button' bindtap='bindItemButton1Click' id = "{{index}}">+</button>
    <button class='item-button' bindtap='bindItemButton2Click' id = "{{index}}">-</button>
   </view>
 
-  <button bindtap='bindCommitButtonClick'>提交预约</button>
+  <button class="commitButton" bindtap='bindCommitButtonClick'>提交预约</button>
 
 </view>

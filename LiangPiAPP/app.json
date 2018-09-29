@@ -1,8 +1,10 @@
 {
   "pages":[
+
     "pages/homePage/homePage",
     "pages/reservePage/reservePage",
-    "pages/myPage/myPage",
+     "pages/myPage/myPage",
+
     "pages/logs/logs"
   ],
   "window":{

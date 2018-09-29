@@ -19,8 +19,10 @@ Page({
       }
     ],
     dateArray: ['ー選択ー', '2018-09-20', '2018-09-20', '2018-09-20'],
+    timeArray: ['ー選択ー', '10:00～11:00', '11:00～12:00', '12:00～13:00', '13:00～14:00', '14:00～15:00'],
     index: 0,
     dataPickerIndex:0,
+    timePickerIndex: 0,
     goodsArray: [
       {
         id: 0,
@@ -36,6 +38,21 @@ Page({
         id: 2,
         name: '烤面筋',
         count: 3
+      },
+      {
+        id: 2,
+        name: '牛筋面',
+        count: 3
+      },
+      {
+        id: 2,
+        name: '辣椒酱',
+        count: 3
+      },   
+      {
+        id: 2,
+        name: '羊肉泡沫',
+        count: 3
       }
     ]
 
@@ -50,6 +67,12 @@ Page({
     console.log('DatePicker发送选择改变，携带值为', e.detail.value)
     this.setData({
       dataPickerIndex: e.detail.value
+    })
+  }, 
+  bindTimePickerChange: function (e) {
+    console.log('DatePicker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      timePickerIndex: e.detail.value
     })
   }, 
   bindItemButton1Click: function (e) {
