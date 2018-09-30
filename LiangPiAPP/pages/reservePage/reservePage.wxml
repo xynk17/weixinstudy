@@ -20,7 +20,13 @@
     <text class="item-picker"space="ensp"> ：   {{timeArray[dataPickerIndex]}}</text>
     </view>
   </picker>
+
+  <view class="picker">
+  <text class="item-text1"  space="ensp">联系电话 ： </text>
+  <input class="item-input" maxlength='11'></input>
+  </view>
 </view>
+
 
   <view wx:for="{{goodsArray}}" wx:for-index="index" wx:key="id" class="item-out">
    <text class="item-text"space="ensp">{{item.name}} </text>
