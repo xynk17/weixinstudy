@@ -8,7 +8,7 @@
 .item-out{
   display: flex;
   flex-direction: row;
-  background-color: rgb(216, 204, 98);
+  background-color: rgb(256, 216, 133);
   padding: 10px;
   margin: 8px;
   border-radius: 10px;
@@ -21,8 +21,10 @@
   width: 56%;
 }
 .item{
+  font-size: 18px;
   padding: 10px;
   display: flex;
+  color: rgb(134, 128, 119)
 }
 .divLine{
  background: #E0E3DA;
@@ -31,6 +33,8 @@
 }
 .item-button{
 height: 45px;
+color: rgb(134, 128, 119);
+background-color:rgb(253, 254, 248);
 }
 .item-button-view{
   padding-left: 10px;
@@ -46,4 +50,10 @@ height: 45px;
   padding-right: 5px;
   padding-bottom: 10px;
   align-self: center;
+  color: rgb(194, 131, 36);
+  font-size: 18px;
 }
+.text{
+  font-size: 18px;
+ color: rgb(194, 131, 36)
+ }

@@ -9,14 +9,14 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#CEF6F5",
+    "navigationBarBackgroundColor": "#fab282",
     "navigationBarTitleText": "中華料理屋",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "color": "#A9F5F2",
     "selectedColor": "#BDBDBD",
-    "backgroundColor": "#E0F8F1",
+    "backgroundColor": "#fab282",
     "list": [
       {
         "pagePath": "pages/homePage/homePage",

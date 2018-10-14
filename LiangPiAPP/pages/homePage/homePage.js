@@ -6,8 +6,8 @@ Page({
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ],
     datas: [
-      "/images/1.jpg",
-      "/images/1.jpg",
+      "http://118.27.28.21/images/1.jpg",
+      "http://118.27.28.21/images/1.jpg",
       "/images/1.jpg",
       "/images/1.jpg",
       "/images/1.jpg",

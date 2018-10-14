@@ -1,4 +1,4 @@
-<view >
+<view class='page-background'>
 <!-- head s -->
 <view class="heard">
 <text class='item'>只显示未完了预约</text>
@@ -9,9 +9,9 @@
 <!-- 预约记录 s -->
 <view wx:for="{{recordArray}}" wx:for-index="index" wx:key="id" class="item-out">
 <view class='item-out-column'>
-<text>{{item.date}} {{item.time}}</text>
-<text>{{item.eki}}</text>
-<text>{{item.goodsString}}</text>
+<text class='text'>{{item.date}} {{item.time}}</text>
+<text class='text'>{{item.eki}}</text>
+<text class='text'>{{item.goodsString}}</text>
 </view>
 
 <view class="item-button-view">
